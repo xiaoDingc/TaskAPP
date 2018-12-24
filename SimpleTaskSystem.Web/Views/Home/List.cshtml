@@ -1,0 +1,14 @@
+﻿@model  ICollection<SimpleTaskSystem.TaskDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+@foreach (var task in Model)
+{
+    <div>CreationTime:<span style="color:red">@task.CreationTime</span></div>
+    <div>
+        Description:<span style="color:skyblue">@task.Description</span>
+    </div>
+}
+
