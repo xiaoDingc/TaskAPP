@@ -19,7 +19,7 @@ namespace SimpleTaskSystem.Web.Controllers
             GetTasksInput getTasksInput = new GetTasksInput();
             getTasksInput.TaskId = 1;
             GetTasksOutput res = _appService.GetTasks(getTasksInput);
-
+            //good
             return View(res.Tasks);
         }
     }
